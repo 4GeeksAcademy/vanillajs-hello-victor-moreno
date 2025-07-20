@@ -1,37 +1,43 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" href="./assets/img/4geeks.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
 
-    <!-- Fontawesome is our recomended library for icons -->
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
-      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-      crossorigin="anonymous"
-    />
-  </head>
-  <body onload="">
-    
-    <!-- Write your HTML code here, you can delete everything withing the body tags -->
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./assets/img/rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <p id="excuse">My dog ate my homework</p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="./assets/img/4geeks.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hello Rigo with Vanilla.js</title>
+
+  <!-- Fontawesome is our recomended library for icons -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+    integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Single:wght@100..900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body onload="">
+
+  <!-- Write your HTML code here, you can delete everything withing the body tags -->
+  <div class="container container-fluid text-white">
+    <div class="row d-flex justify-content-center align-items-center vh-100">
+      <div class="col-sm-6 ">
+        <h1 class="text-center">Welcome to your excuse generator!!</h1>
+        <div class="card mx-auto mt-5 bg-transparent" style="width: 24rem;">
+          <img
+            src="https://thumbs.dreamstime.com/b/gabinete-de-madera-brillante-con-la-etiqueta-de-fichero-de-las-excusas-23859390.jpg"
+            class="card-img-top rounded-circle" alt="...">
+          <div class="card-body text-center">
+            <h5 class="card-title">Your perfect excuse for today</h5>
+            <p class="card-text bg-warning bg-opacity-75 rounded-3 text-black" id="excuse">My dog ate my homework</p>
+            <a onclick="location.reload()" class="btn btn-primary">Generate excuse</a>
+          </div>
+        </div>
       </div>
     </div>
+  </div>
+  <!-- Do not delete this script tag, this is what connects your HTML with the Javascript code -->
+  <script type="module" src="/app.js"></script>
+</body>
 
-    <!-- Do not delete this script tag, this is what connects your HTML with the Javascript code -->
-    <script type="module" src="/app.js"></script>
-  </body>
 </html>
